@@ -1,1 +1,1 @@
-# video-analytics-project
+# Real-Time Tiger Spotting for Wildlife Sanctuaries
