@@ -29,6 +29,7 @@ search_queries = ["tigers in the wilderness",
                   "kanha tiger photos by wildlife photographers",
                   "bandhavgarh tiger photos by wildlife photographers"]
 
+
 for i in search_queries:
     data_collector = CollectImages(i, './images', 200)
     data_collector.search_and_download()
