@@ -24,5 +24,11 @@ class CollectImages:
         self.__construct_search_query()
         self.gis.search(search_params=self.search_params, path_to_dir=self.path_to_save)
 
-data_collector = CollectImages('tiger images by wildlife photographers', './images', 1)
-data_collector.search_and_download()
+search_queries = ["tigers in the wilderness",
+                  "amur tiger photos by wildlife photographers",
+                  "kanha tiger photos by wildlife photographers",
+                  "bandhavgarh tiger photos by wildlife photographers"]
+
+for i in search_queries:
+    data_collector = CollectImages(i, './images', 200)
+    data_collector.search_and_download()
