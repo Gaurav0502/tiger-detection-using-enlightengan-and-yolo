@@ -8,4 +8,11 @@ In this repository, tiger detection is implemented using YOLOv8 from Ultralytics
 - The images in ATRW dataset are enhanced in terms of illumination using EnlightenGAN and the enhanced dataset is made available <a href="https://www.kaggle.com/datasets/gauravpendharkar/enlightengan-results-for-atrw-dataset">here</a>.
 
 ## Results
-The results of the training and validation are available in wandb <a href="https://wandb.ai/gauravpendharkar/YOLOv8/">here</a>.
+- A sample prediction is provided for both cases: YOLOv8 and EnlightenGAN + YOLOv8.
+
+YOLOv8 (Low Illumination)             |  EnlightenGAN + YOLOv8 (Enhanced Illumination)
+:-------------------------:|:-------------------------:
+![](https://github.com/Gaurav0502/tiger-detection-using-enlightengan-and-yolo/blob/main/data/results/low_illumination.png)  |  ![](https://github.com/Gaurav0502/tiger-detection-using-enlightengan-and-yolo/blob/main/data/results/illuminated.png)
+
+- The results of the training and validation are available in wandb <a href="https://wandb.ai/gauravpendharkar/YOLOv8/">here</a>.
+
