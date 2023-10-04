@@ -7,6 +7,12 @@ In this repository, tiger detection is implemented using YOLOv8 from Ultralytics
 - The ATRW dataset comprises train and validation data in PASCAL VOC format and testing data in COCO format. Both of them are converted in YOLO Darknet format as expected by Ultralytics. The dataset is open-source and available in Kaggle <a href="https://www.kaggle.com/datasets/gauravpendharkar/tiger-detection-dataset">here</a>.
 - The images in ATRW dataset are enhanced in terms of illumination using EnlightenGAN and the enhanced dataset is made available <a href="https://www.kaggle.com/datasets/gauravpendharkar/enlightengan-results-for-atrw-dataset">here</a>.
 
+## Kaggle Notebooks
+The tasks of Tiger Detection and Image Enhancement were carried out in Kaggle using GPU P100. The codes can be found in the respective notebooks:
+
+- <a href="https://www.kaggle.com/code/gauravpendharkar/tiger-detection-using-yolo-and-enlightengan"> Tiger Detection using YOLOv8 (for both cases) </a>
+- <a href="https://www.kaggle.com/code/gauravpendharkar/enlightengan-with-cudaexecutionprovider"> Image Enhancement using EnlightenGAN </a> 
+
 ## Results
 - A sample prediction is provided for both cases: YOLOv8 and EnlightenGAN + YOLOv8.
 
