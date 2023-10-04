@@ -2,9 +2,11 @@
 /final_images
 /final_data
 /enlightened_data
-/data
 .env
 *.jpg
+*.json
+*.xml
+*.txt
 *.pt
 *.zip
 /runs
