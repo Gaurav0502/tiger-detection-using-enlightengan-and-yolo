@@ -1,6 +1,10 @@
 /images
 /final_images
 /final_data
+/enlightened_data
 /data
-/notebooks
 .env
+*.jpg
+*.pt
+*.zip
+/runs
