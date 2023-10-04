@@ -22,3 +22,7 @@ YOLOv8 (Low Illumination)             |  EnlightenGAN + YOLOv8 (Enhanced Illumin
 
 - The results of the training and validation are available in wandb <a href="https://wandb.ai/gauravpendharkar/YOLOv8/">here</a>.
 
+## Referenced GitHub Repositories
+- <a href="https://github.com/arsenyinfo/EnlightenGAN-inference">EnligthenGAN Inference</a>
+- <a href="https://github.com/VITA-Group/EnlightenGAN">EnligthenGAN (Main Implementation)</a>
+- <a href="https://github.com/cvwc2019/ATRWEvalScript">GroundTruth & Eval Scripts for ATRW Dataset</a>
