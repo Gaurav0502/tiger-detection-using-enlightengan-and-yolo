@@ -11,7 +11,34 @@ In this repository, tiger detection is implemented using YOLOv8 from Ultralytics
 The tasks of Tiger Detection and Image Enhancement were carried out in Kaggle using GPU P100. The codes can be found in the respective notebooks:
 
 - <a href="https://www.kaggle.com/code/gauravpendharkar/tiger-detection-using-yolo-and-enlightengan"> Tiger Detection using YOLOv8 (for both cases) </a>
-- <a href="https://www.kaggle.com/code/gauravpendharkar/enlightengan-with-cudaexecutionprovider"> Image Enhancement using EnlightenGAN </a> 
+- <a href="https://www.kaggle.com/code/gauravpendharkar/enlightengan-with-cudaexecutionprovider"> Image Enhancement using EnlightenGAN </a>
+
+## Model Inference
+### Requirements
+```sh
+pip install ultralytics
+```
+### Sample Code
+```python
+from ultralytics import YOLO
+import matplotlib.pyplot as plt
+
+# Loading the best checkpoint
+model = YOLO("weights/best_enlightengan_and_yolov8.pt") # or "weights/best_yolov8.pt" for plain YOLOv8 inference
+
+# For training and validation
+model.train(data=path_to_yaml_file, epochs=number_of_epochs)
+model.val()
+
+# For testing the model on a test folder
+model.val(data=path_to_yaml_file, split="test")
+
+# For testing the model on an image
+result = model.predict(source=path_to_image)
+annotated = result[0].plot(line_width=linewidth)
+plt.imshow(annotated)
+
+```
 
 ## Results
 - A sample prediction is provided for both cases: YOLOv8 and EnlightenGAN + YOLOv8.
