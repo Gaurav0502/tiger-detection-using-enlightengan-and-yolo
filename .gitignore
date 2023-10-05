@@ -7,6 +7,5 @@
 *.json
 *.xml
 *.txt
-*.pt
 *.zip
 /runs
